@@ -7,7 +7,7 @@ public class Walking : MonoBehaviour
 
     private Rigidbody2D body;
     public float horizontal;
-
+    public GameObject effect;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
 
@@ -42,7 +42,6 @@ public class Walking : MonoBehaviour
             body.AddForce(new Vector2(0, 400));
             jumping = true;
             animator.SetBool("jumping", jumping);
-
         }
     }
 
@@ -57,6 +56,10 @@ public class Walking : MonoBehaviour
     {
         jumping = false;
         animator.SetBool("jumping", jumping);
-
+        if (collision2D.gameObject.CompareTag("Animal"))
+        {
+            Destroy(collision2D.gameObject);
+            Instantiate(effect);
+        }
     }
 }
