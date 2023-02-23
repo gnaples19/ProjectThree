@@ -9,21 +9,20 @@ public class CollectionScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audio = GetComponent<AudioSource>();
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
     {
-        
         if (collision2D.gameObject.CompareTag("Player"))
         {   
-            //Instantiate(effect);  
-            StartCoroutine("Collected"); 
-
+            StartCoroutine("Collected");
+            GameManager.Instance.IncScore(1);  
+            //Instantiate(effect);
+            
         }
         
     }
-
     IEnumerator Collected()
     {
         audio.Play();

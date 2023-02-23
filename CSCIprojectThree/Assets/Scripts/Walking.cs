@@ -14,6 +14,7 @@ public class Walking : MonoBehaviour
     private bool jumping = false;
 
     public float runSpeed = 5f;
+    public int level;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class Walking : MonoBehaviour
     {
 
         if(transform.position.y < -50){
-            GameManager.Instance.RestartLevel(1);
+            GameManager.Instance.RestartLevel(level);
         }
 
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -57,17 +58,17 @@ public class Walking : MonoBehaviour
 
     }
 
-    void OnCollisionEnter2D(Collision2D collision2D)
-    {
-        jumping = false;
-        animator.SetBool("jumping", jumping);
-        if (collision2D.gameObject.CompareTag("Animal"))
-        {   
-            GameManager.Instance.IncScore(1);  
-            Destroy(collision2D.gameObject); 
-            Instantiate(effect);
+    // void OnCollisionEnter2D(Collision2D collision2D)
+    // {
+    //     jumping = false;
+    //     animator.SetBool("jumping", jumping);
+    //     if (collision2D.gameObject.CompareTag("Animal"))
+    //     {   
+    //         GameManager.Instance.IncScore(1);  
+    //         Destroy(collision2D.gameObject); 
+    //         Instantiate(effect);
             
-        }
+    //     }
         
-    }
+    // }
 }
