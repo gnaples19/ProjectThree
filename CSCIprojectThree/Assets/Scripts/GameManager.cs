@@ -32,14 +32,15 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score : " + score; 
     }
 
+    public void ReturnToMenu(){
+        SceneManager.LoadScene(0);
+    }
+
     public void IncScore(int ds)
     {
         score += ds;
         scoreText.text = "Score : " + score;
     }
 
-    public void Restart(){
-        Application.LoadLevel(1);
-    }
  
 }

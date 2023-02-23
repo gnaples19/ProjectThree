@@ -68,5 +68,6 @@ public class Walking : MonoBehaviour
             Instantiate(effect);
             
         }
+        
     }
 }
