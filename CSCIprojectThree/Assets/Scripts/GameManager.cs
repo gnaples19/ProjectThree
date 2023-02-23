@@ -7,11 +7,30 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance { get; private set; }
+    public static GameManager Instance {get; private set;}
 
     public TextMeshProUGUI scoreText;
     private int score = 0;
 
+    void Awake() {
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else {
+            Destroy(gameObject);
+        }
+
+    }
+
+    public void RestartLevel(int level){
+        SceneManager.LoadScene(level);
+    }
+
+
+    public void StartGame() {
+        score = 0;
+        scoreText.text = "Score : " + score; 
+    }
 
     public void IncScore(int ds)
     {
@@ -19,4 +38,8 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score : " + score;
     }
 
+    public void Restart(){
+        Application.LoadLevel(1);
+    }
+ 
 }

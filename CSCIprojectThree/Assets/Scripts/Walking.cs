@@ -26,6 +26,11 @@ public class Walking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(transform.position.y < -50){
+            GameManager.Instance.RestartLevel(1);
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal");
         animator.SetFloat("horizontal", horizontal);
         if (horizontal < 0)
@@ -57,9 +62,11 @@ public class Walking : MonoBehaviour
         jumping = false;
         animator.SetBool("jumping", jumping);
         if (collision2D.gameObject.CompareTag("Animal"))
-        {
-            Destroy(collision2D.gameObject);
+        {   
+            GameManager.Instance.IncScore(1);  
+            Destroy(collision2D.gameObject); 
             Instantiate(effect);
+            
         }
     }
 }
