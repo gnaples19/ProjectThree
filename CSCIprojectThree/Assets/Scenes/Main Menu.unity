@@ -389,8 +389,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 0
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -765,15 +765,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_Material: {fileID: 2100000, guid: 4beb055f07aaff244873dec698d0363e, type: 3}
+  m_Color: {r: 1, g: 0.41037738, b: 0.41037738, a: 1}
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 32b67fef406df5c46b96cb9f4c3d34df, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fd31314226bc7274c8112e6812c7c3d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -954,10 +954,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: "All assets used in this game were either self created, or used under a
     creative commons license, and can be found at one of these links.\n\nAnimals
-    - https://kale-game.itch.io/2d-pixel-art\n\t\nPlayer Model - https://opengameart.org/content/platformer-animations\n\nSound
-    - https://pixabay.com/sound-effects/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=94474\n 
-    \n\nBackgrounds - https://opengameart.org/content/pixel-art-parallax-background\n\t\n\tPlatforms
-    - https://www.kenney.nl/assets/pixel-platformer\n\nThank you for playing. "
+    - https://kale-game.itch.io/2d-pixel-art\n\t\nPlayer Model - https://opengameart.org/content/platformer-animations\n\nBackgrounds
+    - https://opengameart.org/content/pixel-art-parallax-background\n\t\nPlatforms
+    - https://www.kenney.nl/assets/pixel-platformer\n\nClockface - https://freesvg.org/relogio-digital\n\nThank
+    you for playing. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1529,7 +1529,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.9, y: 62.7}
+  m_AnchoredPosition: {x: -15, y: 62}
   m_SizeDelta: {x: 656.8765, y: 151.4165}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812009724
@@ -1553,6 +1553,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Wake UP!
+
 
     You are late for your job at the zoo.'
   m_isRightToLeft: 0
@@ -1581,8 +1582,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1617,7 +1618,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -104.25183, z: 7.2347107, w: 0}
+  m_margin: {x: 0, y: -0.7650223, z: 1.4855042, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
