@@ -3948,11 +3948,21 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: 80, y: 4, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 21
+      m_TileSpriteIndex: 21
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 81, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 8
-      m_TileSpriteIndex: 8
+      m_TileIndex: 7
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -4008,21 +4018,11 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 80, y: 5, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 21
-      m_TileSpriteIndex: 21
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
   - first: {x: 81, y: 5, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 15
-      m_TileSpriteIndex: 15
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -5094,13 +5094,13 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 6c3f1e56def8ae4408c13390b35bb0fa, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 0601d5dcf8f22264481caddafad30ee8, type: 2}
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: 745d971933ee05e408a3bf489d06eff3, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 8b2c6f5e7ac3c9441b4c3b82ff1c213a, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 62479763d5ed79e4f941f2fb5068277b, type: 2}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 463edbccc4e1bf948b72a46dbb32da27, type: 2}
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: cb70f4b16a56d6e4dba182a87178990d, type: 2}
@@ -5110,7 +5110,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9d78814d54f854e4a95e851702713e55, type: 2}
   - m_RefCount: 14
     m_Data: {fileID: 11400000, guid: a38e7554c6d02f8439f567392231c16b, type: 2}
-  - m_RefCount: 60
+  - m_RefCount: 59
     m_Data: {fileID: 11400000, guid: 7d27c5214642349498b68e121d62bb11, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: 562e605c2b7cd894fa7e4e06a0397c8a, type: 2}
@@ -5139,13 +5139,13 @@ Tilemap:
     m_Data: {fileID: -1680115791, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -869491012, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
-  - m_RefCount: 13
+  - m_RefCount: 14
     m_Data: {fileID: -1895803653, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 1
     m_Data: {fileID: -1813867238, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: -562258845, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data: {fileID: 1101741084, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
   - m_RefCount: 5
     m_Data: {fileID: 361985977, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
@@ -5155,7 +5155,7 @@ Tilemap:
     m_Data: {fileID: 1383719363, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
   - m_RefCount: 14
     m_Data: {fileID: -1141244712, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
-  - m_RefCount: 60
+  - m_RefCount: 59
     m_Data: {fileID: -662446439, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -1115039603, guid: 9337641c4cd96c74a9eaa43a990a411e, type: 3}
@@ -5524,20 +5524,14 @@ CompositeCollider2D:
       - X: 810000000
         Y: 79444448
       - X: 810000000
-        Y: 60000000
-      - X: 800555584
-        Y: 60000000
-      - X: 800000000
-        Y: 59444448
-      - X: 800000000
-        Y: 50555552
+        Y: 50000000
       - X: 800555584
         Y: 50000000
-      - X: 810000000
-        Y: 50000000
-      - X: 810000000
+      - X: 800000000
+        Y: 49444448
+      - X: 800000000
         Y: 40555552
-      - X: 810555584
+      - X: 800555584
         Y: 40000000
       - X: 820000000
         Y: 40000000
@@ -5747,14 +5741,11 @@ CompositeCollider2D:
       - {x: 81.99997, y: 8}
       - {x: 81.05555, y: 7.999992}
       - {x: 81, y: 7.9444337}
-      - {x: 80.99997, y: 6}
-      - {x: 80.05555, y: 5.9999924}
-      - {x: 80, y: 5.944434}
-      - {x: 80.00001, y: 5.0555477}
-      - {x: 80.05557, y: 5}
-      - {x: 81, y: 4.9999704}
-      - {x: 81.00001, y: 4.0555477}
-      - {x: 81.05557, y: 4}
+      - {x: 80.99997, y: 5}
+      - {x: 80.05555, y: 4.9999924}
+      - {x: 80, y: 4.944434}
+      - {x: 80.00001, y: 4.0555477}
+      - {x: 80.05557, y: 4}
       - {x: 82, y: 3.9999704}
       - {x: 81.99997, y: 3}
       - {x: 81.55555, y: 2.9999924}
@@ -6898,7 +6889,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -378.61, y: -305.01}
+  m_AnchoredPosition: {x: -379.12, y: -305.07}
   m_SizeDelta: {x: 5.0657, y: 4.1844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &759972111
@@ -6930,8 +6921,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -13702,7 +13693,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -455.22, y: -299.28}
+  m_AnchoredPosition: {x: -454.55, y: -299.33}
   m_SizeDelta: {x: 5.0657, y: 4.1844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1042813534
@@ -15540,7 +15531,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -448.66, y: -308.26}
+  m_AnchoredPosition: {x: -448.75, y: -308.47}
   m_SizeDelta: {x: 5.0657, y: 4.1844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684926356
