@@ -58,17 +58,17 @@ public class Walking : MonoBehaviour
 
     }
 
-    // void OnCollisionEnter2D(Collision2D collision2D)
-    // {
-    //     jumping = false;
-    //     animator.SetBool("jumping", jumping);
-    //     if (collision2D.gameObject.CompareTag("Animal"))
-    //     {   
-    //         GameManager.Instance.IncScore(1);  
-    //         Destroy(collision2D.gameObject); 
-    //         Instantiate(effect);
+     void OnCollisionEnter2D(Collision2D collision2D)
+     {
+         jumping = false;
+         animator.SetBool("jumping", jumping);
+         if (collision2D.gameObject.CompareTag("Animal"))
+         {   
+             GameManager.Instance.IncScore(1);  
+             Destroy(collision2D.gameObject); 
+             Instantiate(effect);
             
-    //     }
+         }
         
-    // }
+     }
 }
