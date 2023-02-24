@@ -31,9 +31,9 @@ public class GameManager : MonoBehaviour
         score = 0;
         scoreText.text = "Score : " + score; 
     }
-
-    public void ReturnToMenu(){
-        SceneManager.LoadScene(0);
+    
+    public void Loadthisscene(int i){
+        SceneManager.LoadScene(i);
     }
 
     public void IncScore(int ds)

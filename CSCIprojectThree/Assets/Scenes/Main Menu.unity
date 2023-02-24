@@ -1551,7 +1551,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This Game Sucks, I'm Sorry You Have to Play It
+  m_text: 'Wake UP!
+
+    You are late for your job at the zoo.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc3986378e195224e9f4cfc4a025cfb6, type: 2}
   m_sharedMaterial: {fileID: 6029683322215585409, guid: dc3986378e195224e9f4cfc4a025cfb6, type: 2}
@@ -1578,8 +1580,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    public int level;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Door : MonoBehaviour
     public void OnCollisionEnter2D(Collision2D collision2D) {
         print("Entered..");
         if (collision2D.gameObject.CompareTag("Player")) {
-            GameManager.Instance.ReturnToMenu();
+            GameManager.Instance.Loadthisscene(level);
         }
     }
 }
